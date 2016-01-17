@@ -1,0 +1,214 @@
+$color-news: #65CDAA;
+$color-rumors: #0077C9;
+$color-reviews: #FFFFCC;
+$color-home: #881011;
+$color-text: #000000;
+
+
+/*********************
+		General
+*********************/
+.top-bar-section, .left-off-canvas-menu, .top-bar .title-area .name, .tab-bar-section{
+	
+	a.news:hover{
+	
+		color: lighten($color-news, 5%) !important;
+	}
+	
+
+	a.rumors:hover{	
+		
+		color: lighten($color-rumors, 20%) !important;	
+	}
+
+	a.reviews:hover{
+
+			color: darken($color-reviews, 20%) !important;
+	}
+
+	.home{
+		
+		color: lighten($color-home, 20%);
+		font-weight: 800;
+
+	}
+}
+//.testnav a:hover{color:red !important;}
+@mixin zero-padding{
+	
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+}
+
+@mixin headlines{
+		color: lighten($color-home, 20%);
+		font-weight: 800;
+		margin-bottom: 15px;
+}
+
+@mixin subsite{
+	margin-bottom: 20px;
+}
+
+.rumor-section{
+
+	#rumor-section-headline{
+		@include headlines;
+	}
+
+	.home-product-rumors{
+
+		@include zero-padding;
+		font-weight: 800;
+
+	}
+
+	background-color: lighten($color-text, 96%);
+
+	.home-rumors:hover{
+
+		.home-product-rumors, .home-content-rumors{
+
+			a{
+			color: lighten($color-rumors, 20%);
+			}
+
+			color: lighten($color-rumors, 20%);
+
+		}
+	}
+}
+
+#footer {
+
+	p{
+		@include zero-padding;
+	}
+
+    clear:left;
+    margin-top:1em;
+    background:lighten($color-text, 96%);
+    text-align:center;
+    padding:10px;
+}
+
+/*********************
+		Home
+*********************/
+
+
+#news{
+
+	#news-section-headline{
+
+		@include headlines;
+
+	}
+
+	
+
+	.news-entry{
+
+		padding-top: 15px;
+		padding-bottom: 0px;
+
+
+
+		//Interessant, Oliver/Lisa zeigen!!
+		
+		margin-bottom: 8px;
+		margin-left: 0px;
+
+		.cont:hover {
+			.product, .discription{
+				color: lighten($color-news, 5%);
+			}
+		}
+		.product, .discription{
+
+			@include zero-padding;
+			line-height: 1.3;
+
+		}		
+
+		.date{
+
+			color: lighten($color-text, 63%);
+		}
+	}
+
+	.news-entry-subsite{
+		padding-top: 0px;
+	}
+
+	.short-cont{
+
+		padding-bottom: 0px;
+
+	}
+}
+
+.news-entry-highlite{
+	
+	@extend .news-entry;
+
+	background-color: lighten($color-text, 96%);
+
+}
+
+hr{
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+/*********************
+	  News-Entry
+*********************/
+
+.news-entry-nav{
+	@include subsite;
+}
+/*********************
+  News - Subsite
+*********************/
+.product-subsite-headline{
+	@include headlines;
+}
+
+/*********************
+  Rumors - Subsite
+*********************/
+
+#rumors-subsite-headline{
+	@include headlines;
+}
+
+.rumors-subsite-pic{
+
+	margin-bottom: 10px;
+
+}
+
+.hr-rumors-subsite{
+
+	//border-color: lighten($color-rumors, 20%);
+	border: none;
+	border-bottom: solid lighten($color-rumors, 20%) 4px;
+
+}
+
+/*********************
+    Impressum
+*********************/
+
+.impressum-headline{
+
+	@include headlines;
+}
+
+
+
+
+
+

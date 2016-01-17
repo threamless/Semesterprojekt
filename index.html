@@ -1,0 +1,306 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameRumors | News | Rumors | Reviews</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div class="off-canvas-wrap" data-offcanvas> 
+    <div class="inner-wrap">
+
+      <!-- Off-Canvas Navigation-->
+      <nav class="tab-bar show-for-small-only">
+        <section class="left-small">
+          <a role="button" class="left-off-canvas-toggle menu-icon" href="#idOfLeftMenu"><span></span></a>
+        </section>
+
+        <section class="middle tab-bar-section">
+          <h1 class="title"><a href="index.html" class="home">GameRumors</a></h1>
+        </section>
+      </nav>
+
+      <!-- Off Canvas Menu -->
+      <aside class="left-off-canvas-menu" aria-hidden="true">
+        <ul class="off-canvas-list show-for-small-only">
+          <li><label class="home">GameRumors</label></li>
+          <li ><a href="#" class="news">News</a></li>
+          <li ><a href="#" class="rumors">Rumors</a></li>
+          <li ><a href="#" class="reviews">Reviews</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content Bereich inkl. Navigation-large -->
+      <section class="main-section">
+
+        <!-- Navigation-large -->
+        <nav class="top-bar hide-for-small-only" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a class="home" href="index.html">GameRumors</a></h1>
+            </li>
+          </ul>
+
+          <section class="top-bar-section testnav">
+            <ul class="left hide-for-small-only">
+              <li><a href="#" class="news">News</a></li>
+              <li><a href="#" class="rumors">Rumors</a></li>
+              <li><a href="#" class="reviews">Reviews</a></li>
+
+            </ul>
+
+            <ul class="right">
+              <li class="has-form">
+                <div class="row collapse">
+                  <div class="large-8 small-8 columns">
+                    <input type ="text" placeholder="Looking for?">
+                  </div>
+                  <div class="large-4 small-4 columns">
+                    <a href="#" class="alert button expand">Suchen</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#" id="dialogTrigger">Login</a></li>
+            </ul>
+
+          </section>
+        </nav>
+
+        <!-- Slider -->
+        <ul class="example-orbit" data-orbit>
+          <li>
+            <img src="img/firewatch.jpg" alt="Firewatch Wallpaper" />
+            <div class="orbit-caption">
+              New Review: Firewatch
+            </div>
+          </li>
+          <li class="active">
+            <img src="img/beast.jpg" alt="Shadow of the Beast Wallpaper" />
+            <div class="orbit-caption">
+              New Rumor: Shadow of the Beast
+            </div>
+          </li>
+          <li>
+            <img src="img/horizon.jpg" alt="Horizon Zero Dawn Wallpaper" />
+            <div class="orbit-caption">
+              New Rumor: Horizon Zero Dawn
+            </div>
+          </li>
+        </ul>    
+
+
+        <!-- Inhalt --> 
+        <div class="row">
+
+          <!-- Spalte 1: Neu hinzugefügte Rumors -->
+          <div class="large-3 rumor-section hide-for-small hide-for-medium columns">
+
+            <h5 id="rumor-section-headline">New Rumors</h5>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+                  <p class="home-product-rumors"><a href="mario_maker.html">Super Mario Maker:</a></p>
+                  <p class="home-content-rumors"><a href="mario_maker.html">Neues Update soll freischaltbare Spielfiguren enthalten</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+                  <p class="home-product-rumors">Playstation 5:</p>
+                  <p class="home-content-rumors">Soll inkl. VR-Brille ausgeliefert werden</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+                  <p class="home-product-rumors">Bioshock 4:</p>
+                  <p class="home-content-rumors">Neuer Ableger soll ähnliches Gameplay wie GTA-Reihe erhalten</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+
+                  <p class="home-product-rumors">World of Warcraft</p>
+                  <p class="home-content-rumors">Soll mit Ende 2017 eingestellt werden</p>
+               </div>
+              </div>
+            </div>
+          
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+
+                  <p class="home-product-rumors">Zelda HD</p>
+                  <p class="home-content-rumors">Neuer Teil soll doch nicht mehr für WiiU erscheinen</p>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+
+                  <p class="home-product-rumors">No Man's Sky</p>
+                  <p class="home-content-rumors">Crafting anscheinend auch Teil des Gameplays</p>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="home-rumors">
+
+                  <p class="home-product-rumors">Warcraft 4</p>
+                  <p class="home-content-rumors">Ankündigung dieses Jahr auf der E3?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spalte 2: News -->
+          <div class ="large-9 medium-12 small-12 columns" id="news">
+
+            <h5 id="news-section-headline">News</h5>
+
+            <div class="row news-entry">
+              <div class="large-4 medium-4 small-4 columns">
+                <img src="img/destiny.jpg" class="th" alt="Destiny Wallpaper">
+              </div>
+              <div class="large-8 medium-8 small-8 columns">
+                <div class="cont">
+                  <a href="#"><h3 class="product">Destiny</h3>
+                  <h4 class="discription"> Bungie kündigt für Februar ein neues Update an</h4></a>
+                </div>
+                <p class="date">11. Januar 2016 um 10:35 Uhr</p>
+                <p class="short-cont hide-for-small-only"> Via Twitter haben die Mannen von Bungie mitgeteilt, dass man im kommenden Monat einmal mehr ein Update für den Online-Shooter "Destiny" veröffentlichen wird.</p>
+              </div>              
+            </div>
+            <hr>
+
+            <div class="row news-entry">
+              <div class="large-4 medium-4 small-4 columns">
+                <img src="img/firewatch_prev.jpg" class="th" alt="Destiny Wallpaper">
+              </div>
+              <div class="large-8 medium-8 small-8 columns">
+                <div class="cont">
+                  <a href="#"><h3 class="product">Firewatch</h3>
+                  <h4 class="discription"> Bietet im Schnitt fünf bis sechs Stunden Gameplay</h4></a>
+                </div>
+                <p class="date">10. Januar 2016 um 09:00 Uhr</p>
+                <p class="short-cont hide-for-small-only"> Im Februar wird das Indie-Game "Firewatch" exklusiv für den PC und die PlayStation 4 erscheinen. Mittlerweile haben sich die Entwickler auch zur Spielzeit des Titels geäußert. Allzu lange seid ihr allerdings nicht beschäftigt.</p>
+              </div>
+            </div>
+            <hr>
+
+            <div class="row news-entry">
+              <div class="large-4 medium-4 small-4 columns">
+                <img src="img/perception.jpg" class="th" alt="Destiny Wallpaper">
+              </div>
+              <div class="large-8 medium-8 small-8 columns">
+                <div class="cont">
+                  <a href="perception.html"><h3 class="product">Perception</h3>
+                  <h4 class="discription"> Umfangreiches Gameplayvideo zum neuen Titel ehemaliger “BioShock”-Entwickler</h4></a>
+                </div>
+                <p class="date">10. Januar 2016 um 08:42 Uhr</p>
+                <p class="short-cont hide-for-small-only"> Die Entwickler von The Deep End Games, die aus ehemaligen Designern der "BioShock"-Reihe bestehen, haben ein umfangreiches Gameplayvideo zu "Perception" veröffentlicht.</p>
+              </div>
+            </div>
+
+            <div class="pagination-centered">
+              <ul class="pagination" role="menubar" aria-label="Pagination">
+                <li class="arrow unavailable" aria-disabled="true"><a href="">&laquo; Previous</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li class="unavailable" aria-disabled="true"><a href="">&hellip;</a></li>
+                <li><a href="">12</a></li>
+                <li><a href="">13</a></li>
+                <li class="arrow"><a href="">Next &raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- close off-canvas menu -->
+      <a class="exit-off-canvas"></a>
+
+      <!-- Login-Dialog-Box -->
+      <div id="dialog" aria-describedby="dialogDescription" tabindex="-1" class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0" style="width: auto; min-height: 256px; height: auto;">
+        <div role="group" aria-describedby="dialogDescription">
+          <p id="dialogDescription">
+            Login:
+          </p>
+            <div class="row">
+              <div class="row collapse">
+                <div class="small-4 columns">
+                  <span class="prefix">Username</span>
+                </div>
+                <div class="small-8 columns">
+                  <input type="text" placeholder="">
+                </div>
+              </div>
+            </div>          
+            <div class="row">
+              <div class="row collapse">
+                <div class="small-4 columns">
+                  <span class="prefix">Password</span>
+                </div>
+                <div class="small-8 columns">
+                  <input type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+          <button type="Button">Login</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <p> <a href="impressum.html"><i class="fa fa-copyright"></i> by Jürgen Thallinger</a> | 2016 </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/demo.js"></script>
+  <script>
+  $(document).foundation();
+  $('document').ready(function() {
+    $("#dialog").dialog({
+      autoOpen: false
+    });
+    $("#dialogTrigger").on("click", function() {
+      $("#dialog").dialog("open");
+    });
+  });
+
+  </script>
+
+</body>
+</html>
